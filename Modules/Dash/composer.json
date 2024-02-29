@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/dash",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Dash\\": "",
+            "Modules\\Dash\\App\\": "app/",
+            "Modules\\Dash\\Database\\Factories\\": "database/factories/",
+            "Modules\\Dash\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Dash\\Tests\\": "tests/"
+        }
+    }
+}

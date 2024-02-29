@@ -1,0 +1,1351 @@
+@media (max-width: 767px) {
+  /* Custom CSS */
+  p {
+    font-size: 16px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    margin: 0 auto 10px;
+    line-height: 1.4;
+  }
+  /*----- Home Page One CSS Start -----*/
+  /* Navbar CSS */
+  .navbar-area .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .navbar-area .mean-container .mean-bar {
+    background-color: #010c29;
+    padding: 0;
+  }
+  .navbar-area .mean-container .mean-bar nav .navbar-nav {
+    height: 300px;
+    overflow: auto;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal {
+    padding: 15px 15px 0 0;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal span {
+    position: relative;
+    top: 8px;
+    margin-top: -5px;
+  }
+  .navbar-area .main-nav {
+    display: none !important;
+  }
+  .navbar-area .other-option {
+    display: none;
+  }
+  /* Banner CSS */
+  .banner-section {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .banner-section::after {
+    display: none;
+  }
+  .banner-section .banner-content h1 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  .banner-section .banner-content .banner-form {
+    padding: 15px;
+  }
+  .banner-section .banner-content .banner-form {
+    margin-bottom: 35px;
+  }
+  .banner-section .banner-content .banner-form .form-group {
+    margin-bottom: 20px;
+  }
+  .banner-section .banner-content .banner-form .form-group label {
+    padding-left: 5px;
+  }
+  .banner-section .banner-content .banner-form .form-group .form-control {
+    height: 50px;
+  }
+  .banner-section .banner-content .banner-form .find-btn {
+    top: 0;
+    padding: 10px 20px;
+  }
+  /* Category CSS */
+  .category-card {
+    padding: 20px;
+  }
+  .category-card i {
+    font-size: 40px;
+  }
+  /* Jobs CSS */
+  .job-card {
+    padding: 20px;
+  }
+  .job-card .thumb-img {
+    margin-bottom: 25px;
+  }
+  .job-card .job-info {
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .job-card .job-info ul li {
+    margin-bottom: 5px;
+    padding-right: 0;
+  }
+  .job-card .job-save span {
+    margin-right: 10px;
+  }
+  .job-card .job-save a i {
+    top: 5px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  /* Way To USe CSS */
+  .use-section {
+    padding-bottom: 0;
+  }
+  .use-text {
+    margin-bottom: 50px;
+  }
+  .use-text i {
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 20px;
+  }
+  .use-text h3 {
+    margin-bottom: 15px;
+  }
+  /* Company CSS */
+  .company-card {
+    padding: 20px;
+  }
+  .company-card .company-logo {
+    margin-bottom: 20px;
+  }
+  .company-card .company-text p {
+    margin-bottom: 20px;
+  }
+  /* Why Choose CSS */
+  .why-choose::before {
+    width: 250px;
+  }
+  .why-choose .section-title {
+    margin-bottom: 30px;
+  }
+  .why-choose .why-choose-text .media {
+    display: block;
+    text-align: center;
+  }
+  .why-choose .why-choose-text .media i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+  }
+  .why-choose .why-choose-text .media .media-body {
+    padding-left: 0;
+  }
+  .why-choose .why-choose-text .media .media-body h5 {
+    font-size: 18px;
+  }
+  .why-choose .why-choose-text .media .media-body p {
+    max-width: 100%;
+  }
+  .why-choose .counter-area {
+    margin-top: 30px;
+  }
+  .why-choose .why-choose-img {
+    height: 300px;
+  }
+  .counter-area .counter-text {
+    margin-bottom: 30px;
+  }
+  .counter-area .counter-text h2 {
+    font-size: 30px;
+  }
+  /* Job Info CSS */
+  .looking-job {
+    padding: 15px;
+  }
+  .looking-job .media {
+    display: block;
+  }
+  .looking-job .media .media-body {
+    padding-left: 0;
+  }
+  .looking-job .media .media-body h5 {
+    font-size: 20px !important;
+    margin-top: 12px !important;
+  }
+  .recruiting-card {
+    padding: 15px;
+  }
+  .recruiting-card .media {
+    display: block;
+  }
+  .recruiting-card .media .media-body {
+    padding-left: 0;
+  }
+  .recruiting-card .media .media-body h5 {
+    font-size: 20px !important;
+    margin-top: 12px !important;
+  }
+  /* Price CSS */
+  .price-card {
+    padding: 30px;
+  }
+  .price-card .price-feature {
+    text-align: center;
+  }
+  .price-card .price-feature ul {
+    padding-left: 0;
+  }
+  .price-card .price-feature ul li {
+    font-size: 15px;
+  }
+  /* Candidate CSS */
+  .condidate-item {
+    max-width: 100%;
+  }
+  /* Testimonial CSS */
+  .testimonial-section .section-title h2 {
+    font-size: 22px;
+  }
+  .testimonial-section .testimonial-slider {
+    padding: 15px;
+  }
+  .testimonial-section .testimonial-slider .testimonial-items .testimonial-text {
+    padding: 30px;
+    margin-top: 25px;
+  }
+  .testimonial-section .testimonial-slider .testimonial-items .testimonial-text p {
+    font-size: 15px;
+  }
+  .testimonial-section .testimonial-slider .owl-next {
+    bottom: 20px;
+  }
+  /* Blog CSS */
+  .blog-card .blog-text h3 {
+    font-size: 18px;
+  }
+  /* Footer CSS */
+  .footer-area .footer-widget.pl-60 {
+    padding-left: 0;
+  }
+  .copyright-text p {
+    line-height: 1.4;
+    padding: 0 5px;
+  }
+  /* Back Top CSS */
+  .top-btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  /*----- Home Page One CSS End -----*/
+  /*----- Home Page Two CSS Start -----*/
+  .banner-style-two {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 130px;
+  }
+  .banner-style-two .banner-text {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .banner-style-two .banner-text span {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .banner-style-two .banner-text h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .banner-style-two .banner-text p {
+    margin-bottom: 35px;
+  }
+  .banner-style-two .banner-img {
+    max-width: 100%;
+    right: 0;
+    top: 0;
+    position: relative;
+    padding: 0 15px;
+  }
+  .banner-style-two .theme-btn .default-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
+  /* Find Section CSS */
+  .find-section .find-form {
+    margin-top: 50px;
+    padding: 15px;
+  }
+  .find-section .find-form .form-group {
+    margin-bottom: 10px;
+  }
+  .find-section .find-form .form-group .form-control {
+    height: 50px;
+    padding: 7px 20px 10px;
+  }
+  .find-section .find-form .form-group i {
+    top: 17px;
+    font-size: 18px;
+  }
+  .find-section .find-form .category {
+    height: 50px;
+    padding: 0px 20px 10px;
+    margin-bottom: 10px;
+  }
+  .find-section .find-form .find-btn {
+    padding: 10px 20px;
+  }
+  /* Why Choose CSS */
+  .choose-card {
+    padding: 20px;
+  }
+  .choose-card i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  /* Job CSS */
+  .job-card-two {
+    padding: 20px;
+    text-align: center !important;
+  }
+  .job-card-two .company-logo {
+    max-width: 100px;
+    margin: 0 auto 20px;
+  }
+  .job-card-two .job-info {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .job-card-two .job-info ul li {
+    display: block;
+  }
+  .job-card-two .theme-btn.text-end {
+    text-align: center !important;
+  }
+  /* Counter CSS */
+  .counter-section .counter-text i {
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  .counter-section .counter-text h2 {
+    margin-bottom: 5px;
+  }
+  /* Testimonial CSS */
+  .testimonial-style-two .section-title h2 {
+    font-size: 20px;
+  }
+  .testimonial-style-two .testimonial-items .testimonial-text {
+    padding: 20px;
+  }
+  .testimonial-style-two .testimonial-items .testimonial-text p {
+    font-size: 16px;
+  }
+  /* Pricing CSS */
+  .pricing-section .section-title h2 {
+    font-size: 20px;
+  }
+  /*----- Home Page Two CSS End -----*/
+  /*----- Home Page Three CSS Start -----*/
+  .banner-style-three {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: 1;
+  }
+  .banner-style-three::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+  }
+  .banner-style-three .banner-text {
+    text-align: center;
+  }
+  .banner-style-three .banner-text span {
+    font-size: 16px;
+  }
+  .banner-style-three .banner-text h1 {
+    font-size: 30px;
+  }
+  .banner-style-three .banner-text p {
+    font-size: 17px;
+  }
+  .banner-style-three .banner-text .theme-btn .default-btn {
+    margin: 0 5px;
+    font-size: 15px;
+    padding: 8px 20px;
+  }
+  /* Job Category CSS */
+  .category-item i {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    top: 15px;
+  }
+  .category-item h3 {
+    font-size: 18px;
+  }
+  /* Grow Business CSS */
+  .grow-text {
+    margin-bottom: 50px;
+  }
+  /* Video CSS */
+  .video-section .video-text h2 {
+    font-size: 25px;
+  }
+  .video-section .video-text a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+  .video-section .video-text a i {
+    font-size: 25px;
+    line-height: 42px;
+  }
+  /* Apps CSS */
+  .browse-job::before {
+    display: none;
+  }
+  .browse-job .browse-jobs-text {
+    margin-bottom: 30px;
+  }
+  .browse-job .browse-jobs-text .app-btn {
+    text-align: center;
+  }
+  .browse-job .browse-jobs-text .app-btn .play-store, .browse-job .browse-jobs-text .app-btn .app-store {
+    margin-right: 0px;
+    padding: 8px 10px;
+  }
+  .browse-job .browse-jobs-text .app-btn .play-store ul, .browse-job .browse-jobs-text .app-btn .app-store ul {
+    padding-left: 30px;
+    text-align: left;
+  }
+  .browse-job .browse-jobs-text .app-btn i {
+    left: 7px !important;
+    top: 13px !important;
+    font-size: 20px !important;
+  }
+  .browse-job .browse-job-img {
+    position: relative;
+    right: 0;
+    max-width: 270px;
+    left: 0;
+    margin: auto;
+  }
+  /* Subscribe CSS */
+  .subscribe-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .subscribe-section .section-title {
+    margin-bottom: 30px;
+  }
+  .subscribe-section .section-title h2 {
+    font-size: 20px;
+  }
+  .subscribe-section .newsletter-form .form-control {
+    margin-bottom: 15px;
+    height: 50px;
+  }
+  .subscribe-section .newsletter-form .sub-btn {
+    position: relative;
+    right: 0;
+    height: 50px;
+  }
+  /*----- Home Page Three CSS End -----*/
+  /*----- Home Page Four CSS Star -----*/
+  .banner-style-four::before {
+    display: none;
+  }
+  .banner-style-four .banner-text {
+    margin-bottom: 50px;
+  }
+  .banner-style-four .banner-img {
+    width: unset;
+    height: unset;
+    position: relative;
+    max-width: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 0;
+  }
+  .discover-section .discover-img {
+    margin-bottom: 50px;
+  }
+  .discover-section .discover-text h2 {
+    font-size: 25px;
+  }
+  .discover-section .discover-text p {
+    font-size: 17px;
+  }
+  .blog-img a {
+    display: block;
+  }
+  .blog-img a img {
+    width: 100%;
+  }
+  .grow-img img {
+    width: 100%;
+  }
+  /* How Works CSS */
+  .how-works .how-works-img {
+    margin-top: 30px;
+  }
+  .how-works .how-works-text .media .media-body {
+    font-size: 16px;
+  }
+  /*----- Home Page Four CSS End -----*/
+  /*----- Home Page Five CSS Start -----*/
+  /* Banner CSS */
+  .banner-style-five .banner-content p {
+    font-size: 16px;
+  }
+  .banner-style-five .find-form .form-group {
+    margin-bottom: 15px;
+  }
+  .banner-style-five .find-form .form-group .form-control {
+    height: 50px;
+  }
+  .banner-style-five .find-form .category {
+    margin-bottom: 15px;
+    height: 50px;
+    padding: 0px 20px 10px;
+  }
+  .banner-style-five .find-form find-btn {
+    padding: 12px 20px;
+  }
+  /* Why Choose */
+  .choose-style-two {
+    padding-bottom: 50px;
+  }
+  .choose-style-two .why-choose-text {
+    padding: 0;
+  }
+  .choose-style-two .why-choose-text .media i {
+    font-size: 30px;
+  }
+  /*----- Home Page Five CSS End -----*/
+  /*----- About Page CSS Start -----*/
+  .page-title h2 {
+    font-size: 30px;
+  }
+  .page-title ul {
+    padding: 5px;
+  }
+  /*----- About Page CSS End -----*/
+  /*----- Find Job Page CSS Start -----*/
+  .job-post-from {
+    padding: 20px;
+  }
+  .job-post-from h2 {
+    font-size: 18px;
+  }
+  .job-post-from .form-group .category {
+    margin-bottom: 20px;
+  }
+  /*----- Find Job Page CSS End -----*/
+  /*----- Job Details Page CSS Start -----*/
+  .job-details-text .job-card {
+    margin-bottom: 0;
+  }
+  .job-details-text .job-card .company-logo {
+    margin: 0 auto 20px;
+    max-width: 100px;
+  }
+  .job-details-text .job-card .job-info h3 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .job-details-text .job-card .job-info ul li {
+    display: block;
+    font-size: 15px;
+  }
+  .job-details-text .theme-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .job-sidebar iframe {
+    height: 400px;
+    width: 100%;
+  }
+  /*----- Job Details Page CSS End -----*/
+  /*----- Candidate Details Page CSS Start -----*/
+  .candidate-info-text .theme-btn .default-btn {
+    font-size: 16px;
+    padding: 5px 14px;
+  }
+  /*----- Candidate Details Page CSS End -----*/
+  /*----- Resume Page CSS Start -----*/
+  .resume-area {
+    padding: 20px;
+  }
+  .resume-area .resume-content h3 {
+    font-size: 20px;
+  }
+  .resume-area .resume-content.basic-info-text ul li {
+    width: 100%;
+    padding: 5px 10px;
+    margin-right: 0;
+    font-size: 15px;
+  }
+  /*----- Resume Page CSS End -----*/
+  /*----- Signin Page CSS Start -----*/
+  .signin-form {
+    padding: 20px;
+  }
+  .signin-form .create-btn p a {
+    display: block;
+  }
+  /*----- Signin Page CSS End -----*/
+  /*----- Signup Page CSS Start -----*/
+  .signup-form {
+    padding: 20px;
+  }
+  .signup-form .create-btn p a {
+    display: block;
+  }
+  /*----- Signup Page CSS End -----*/
+  /*----- Reset Password Page CSS Start -----*/
+  .reset-form {
+    padding: 15px;
+    text-align: center;
+  }
+  .reset-form .form-group small {
+    padding-left: 0;
+  }
+  .reset-form .reset-btn {
+    margin-top: 20px;
+  }
+  /*----- Reset Password Page CSS End -----*/
+  /*----- FAQ Page CSS Start -----*/
+  .faq-section .section-title h2 {
+    font-size: 20px;
+  }
+  .faq-section .accordions .accordion-item .accordion-title {
+    padding: 10px;
+  }
+  .faq-section .accordions .accordion-item .accordion-title h2 {
+    font-size: 15px;
+  }
+  /*----- FAQ Page CSS End -----*/
+  /*----- Terms Page CSS Start -----*/
+  .terms-section .terms-text h2 {
+    font-size: 20px;
+  }
+  /*----- Terms Page CSS End -----*/
+  /*----- Blog Page CSS Start -----*/
+  .blog-card .blog-text {
+    padding: 20px;
+  }
+  /*----- Blog Page CSS End -----*/
+  /*----- Blog Details Page CSS Start -----*/
+  .blog-widget {
+    padding: 20px;
+  }
+  .blog-dedails-text .comment-form {
+    padding: 20px;
+  }
+  .blog-dedails-text .details-tag {
+    text-align: center;
+  }
+  .blog-dedails-text .details-tag ul li {
+    display: block;
+    margin-right: 0;
+  }
+  .blog-dedails-text .details-tag ul li a {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 15px;
+  }
+  /*----- Blog Details Page CSS End -----*/
+  /*----- Contact Page CSS Start -----*/
+  .contact-area {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  /*----- Contact Page CSS End -----*/
+  .job-card-two .job-info h3 {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+  .company-style-two .pagination {
+    margin-top: 15px;
+  }
+  .company-style-two .pagination .page-item .page-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+  .company-style-two .pagination .page-item .page-link i {
+    font-size: 15px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .page-title {
+    padding-bottom: 120px;
+  }
+  .discover-img {
+    text-align: center;
+  }
+  .candidate-profile {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Custom CSS */
+  p {
+    font-size: 16px;
+  }
+  .pt-100 {
+    padding-top: 70px;
+  }
+  .ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .pb-100 {
+    padding-bottom: 70px;
+  }
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title p {
+    font-size: 17px;
+    max-width: 500px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    margin: 0 auto 20px;
+    line-height: 1.4;
+  }
+  /*----- Home Page One CSS Start -----*/
+  /* Navbar CSS */
+  .navbar-area .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .navbar-area .mobile-nav .logo {
+    text-decoration: none;
+    position: absolute;
+    top: 11px;
+    z-index: 999;
+    left: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .navbar-area .mean-container .mean-bar {
+    background-color: #010c29;
+    padding: 0;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal {
+    padding: 15px 15px 0 0;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal span {
+    position: relative;
+    top: 8px;
+    margin-top: -5px;
+  }
+  .navbar-area .mobile-nav nav .navbar-nav {
+    height: 300px;
+    overflow: auto;
+  }
+  .navbar-area .mobile-nav nav .navbar-nav .nav-item a i {
+    display: none;
+  }
+  .navbar-area .main-nav {
+    display: none !important;
+  }
+  .navbar-area .other-option {
+    display: none;
+  }
+  /* Banner CSS */
+  .banner-section {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .banner-section .banner-content h1 {
+    font-size: 45px;
+    margin-bottom: 55px;
+  }
+  .banner-section .banner-content .banner-form {
+    padding: 15px;
+  }
+  .banner-section .banner-content .banner-form .form-group .form-control {
+    height: 50px;
+  }
+  .banner-section .banner-content .banner-form .find-btn {
+    height: 50px;
+    padding: 10px 20px;
+  }
+  /* Category CSS */
+  .category-card {
+    padding: 30px 20px;
+  }
+  .category-card h3 {
+    font-size: 20px;
+  }
+  /* Jobs CSS */
+  .job-card .thumb-img {
+    margin-bottom: 25px;
+  }
+  .job-card .job-info {
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .job-card .job-save span {
+    margin-right: 10px;
+  }
+  .job-card .job-save a i {
+    top: 5px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  /* Way To Use CSS */
+  .use-text {
+    padding: 0;
+  }
+  .use-text i {
+    font-size: 35px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin-bottom: 20px;
+  }
+  .use-text h3 {
+    margin-bottom: 15px;
+  }
+  /* Job Info CSS */
+  .looking-job {
+    padding: 15px;
+  }
+  .looking-job .media {
+    display: block;
+  }
+  .looking-job .media .media-body {
+    padding-left: 0;
+  }
+  .looking-job .media .media-body h5 {
+    font-size: 20px !important;
+    margin-top: 12px !important;
+  }
+  .recruiting-card {
+    padding: 15px;
+  }
+  .recruiting-card .media {
+    display: block;
+  }
+  .recruiting-card .media .media-body {
+    padding-left: 0;
+  }
+  .recruiting-card .media .media-body h5 {
+    font-size: 20px !important;
+    margin-top: 12px !important;
+  }
+  /* Why Choose CSS */
+  .why-choose-img {
+    height: 500px;
+  }
+  /* Testimonial CSS */
+  .testimonial-slider .testimonial-items .testimonial-text {
+    padding: 10px 30px;
+  }
+  .testimonial-slider .owl-next {
+    bottom: 0;
+    right: 0;
+  }
+  /* Footer CSS */
+  .footer-area .footer-widget.pl-60 {
+    padding-left: 0;
+  }
+  /*----- Home Page One CSS End -----*/
+  /*----- Home Page Two CSS Start -----*/
+  /* Banner CSS */
+  .banner-style-two {
+    height: 100%;
+    padding: 150px;
+    padding-bottom: 150px;
+  }
+  .banner-style-two .banner-img {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .banner-style-two .banner-text {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  .banner-style-two .banner-text h1 {
+    font-size: 45px;
+  }
+  /* Find CSS */
+  .find-form {
+    margin-top: 70px;
+  }
+  .find-form .form-group {
+    margin-bottom: 20px;
+  }
+  .find-form .form-group .form-control {
+    height: 50px;
+    padding: 9px 20px 10px;
+  }
+  .find-form .form-group i {
+    top: 14px;
+  }
+  .find-form .category {
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0px 20px 10px;
+  }
+  .find-form .find-btn {
+    font-size: 15px;
+    padding: 13px 20px;
+  }
+  /* Job CSS */
+  .job-card-two .company-logo {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+  }
+  .job-card-two .company-logo img {
+    max-width: 40px;
+  }
+  .job-card-two .job-info h3 {
+    font-size: 16px;
+  }
+  /* Counter CSS */
+  .counter-section .counter-text i {
+    left: 30px;
+    top: 10px;
+    font-size: 50px;
+  }
+  .counter-section .counter-text h2 {
+    font-size: 40px;
+  }
+  /* Testimonial CSS */
+  .testimonial-slider-two .testimonial-items .testimonial-text {
+    padding: 20px;
+  }
+  .testimonial-slider-two .testimonial-items .testimonial-text p {
+    font-size: 16px;
+  }
+  /*----- Home Page Two CSS End -----*/
+  /*----- Home Page Three CSS Start -----*/
+  /* Banner CSS */
+  .banner-style-three {
+    height: 100%;
+    padding-top: 175px;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: 1;
+  }
+  .banner-style-three::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+  }
+  .banner-style-three .banner-text {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  .banner-style-three .banner-text h1 {
+    font-size: 35px;
+  }
+  /* Apps Section CSS */
+  .browse-job::before {
+    display: none;
+  }
+  .browse-job .browse-job-img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 270px;
+  }
+  .browse-job .browse-jobs-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .browse-job .browse-jobs-text .app-btn .app-store ul, .browse-job .browse-jobs-text .app-btn .play-store ul {
+    text-align: left;
+  }
+  /* Grow Business CSS */
+  .grow-business .section-title h2 {
+    font-size: 22px;
+  }
+  .grow-business .grow-text {
+    margin-bottom: 50px;
+  }
+  /* Counter CSS */
+  .counter-section .counter-text {
+    margin-bottom: 30px;
+  }
+  /* Subscribe CSS */
+  .subscribe-section .newsletter-form .form-control {
+    height: 50px;
+  }
+  .subscribe-section .newsletter-form .sub-btn {
+    padding: 0 20px;
+    height: 50px;
+  }
+  /*----- Home Page Three CSS End -----*/
+  /*----- Home Page Four CSS Start -----*/
+  /* Banner CSS */
+  .banner-style-four::before {
+    width: 100%;
+  }
+  .banner-style-four .banner-text {
+    margin-bottom: 70px;
+  }
+  .banner-style-four .banner-img {
+    position: relative;
+    top: inherit;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  /* Discover CSS */
+  .discover-section .discover-img {
+    margin-bottom: 30px;
+  }
+  .discover-section .discover-text h2 {
+    font-size: 30px;
+  }
+  /* How Works CSS */
+  .how-works .section-title h2 {
+    margin: 0 0 20px;
+  }
+  .how-works .section-title p {
+    margin: 0 0 0;
+  }
+  /*----- Home Page Four CSS End -----*/
+  /*----- Home Page Five CSS Start -----*/
+  .choose-style-two {
+    padding-bottom: 70px;
+  }
+  .choose-style-two .why-choose-text .media .media-body h5 {
+    font-size: 18px;
+  }
+  /*----- Home Page Five CSS End -----*/
+  /*----- About Page CSS Start -----*/
+  .about-section {
+    text-align: center;
+  }
+  /*----- About Page CSS End -----*/
+  /*----- Find Job Page CSS Start -----*/
+  .job-post-from {
+    padding: 30px;
+  }
+  .job-post-from h2 {
+    font-size: 30px;
+  }
+  .job-details-text .job-card .job-info {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .job-details-text .theme-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .job-sidebar iframe {
+    width: 100%;
+  }
+  /*----- Find Job Page CSS End -----*/
+  /*----- Resume Page CSS Start -----*/
+  .resume-area {
+    padding: 20px;
+  }
+  .resume-area .resume-content h3 {
+    font-size: 20px;
+  }
+  .resume-area .resume-content.basic-info-text ul li {
+    width: 45%;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  .discover-img {
+    text-align: center;
+  }
+  /*----- Resume Page CSS End -----*/
+  /*----- Contact Page CSS Start -----*/
+  .contact-card {
+    padding: 20px;
+  }
+  /*----- Contact Page CSS End -----*/
+  .candidate-profile {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*----- Home Page One CSS Start -----*/
+  /* Navbar CSS */
+  .navbar-area .main-nav .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+  }
+  .navbar-area .main-nav .navbar .other-option {
+    top: -2px;
+    position: relative;
+  }
+  .navbar-area .main-nav .navbar .other-option .signup-btn, .navbar-area .main-nav .navbar .other-option .signin-btn {
+    font-size: 15px;
+  }
+  /* Banner CSS */
+  .banner-section {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  /* Jobs CSS */
+  .job-card .job-info {
+    padding-left: 0;
+  }
+  .job-card .job-info ul li {
+    padding-right: 0;
+  }
+  /* Pricing CSS */
+  .price-card .price-feature ul li {
+    font-size: 16px;
+  }
+  /* Testimonial CSS */
+  .testimonial-items .testimonial-text {
+    padding: 32px;
+    margin-top: 0;
+  }
+  /* Blog CSS */
+  .blog-card .blog-text h3 {
+    font-size: 18px;
+  }
+  /* Footer CSS */
+  .footer-area .footer-widget.pl-60 {
+    padding-left: 35px;
+  }
+  .footer-area .footer-widget p {
+    font-size: 15px;
+  }
+  /*----- Home Page One CSS End -----*/
+  /*----- Home Page Two CSS Start -----*/
+  .banner-style-two {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+  .banner-style-two .banner-img {
+    max-width: 400px;
+  }
+  .banner-style-two .banner-text {
+    max-width: 465px;
+  }
+  .banner-style-two .banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  /* Find CSS */
+  .find-form .form-group .form-control {
+    padding: 5px 10px 10px;
+  }
+  .find-form .form-group i {
+    font-size: 20px;
+    right: 5px;
+    top: 20px;
+  }
+  .find-form .category::after {
+    right: 10px;
+  }
+  /* Job Info CSS */
+  .job-card-two .job-info {
+    padding-left: 100px;
+  }
+  /* Counter CSS */
+  .counter-area .counter-text i {
+    top: 20px;
+    font-size: 40px;
+  }
+  .counter-area .counter-text h2 {
+    font-size: 40px;
+  }
+  /* Testimonial CSS */
+  .testimonial-slider-two .testimonial-items .testimonial-text {
+    padding: 25px;
+  }
+  /*----- Home Page Two CSS End -----*/
+  /*----- Home Page Three CSS Start -----*/
+  /* Banner CSS */
+  .banner-style-three {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  /* Category CSS */
+  .category-item {
+    padding-left: 75px;
+  }
+  .category-item i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    top: 17px;
+  }
+  .category-item h3 {
+    font-size: 18px;
+  }
+  /* Grow Business CSS */
+  .grow-business .grow-text p {
+    font-size: 16px;
+  }
+  /* Subscriber CSS */
+  .subscribe-section .section-title h2 {
+    font-size: 35px;
+  }
+  /*----- Home Page Three CSS End -----*/
+  /*----- Home Page Four CSS Start -----*/
+  /* Banner CSS */
+  .banner-style-four .banner-img {
+    max-width: 400px;
+    right: 50px;
+    top: 140px;
+  }
+  /* How Works CSS */
+  .how-works .media .media-body {
+    font-size: 15px;
+  }
+  /* Job Info CSS */
+  .looking-job {
+    padding: 15px;
+  }
+  .looking-job .media {
+    display: block;
+  }
+  .looking-job .media .media-body {
+    padding-left: 0;
+  }
+  .looking-job .media .media-body h5 {
+    font-size: 20px !important;
+    margin-top: 12px !important;
+  }
+  .recruiting-card {
+    padding: 15px;
+  }
+  .recruiting-card .media {
+    display: block;
+  }
+  .recruiting-card .media .media-body {
+    padding-left: 0;
+  }
+  .recruiting-card .media .media-body h5 {
+    font-size: 20px !important;
+    margin-top: 12px !important;
+  }
+  /*----- Home Page Four CSS End -----*/
+  /*----- Home Page Five CSS Start -----*/
+  .category-card {
+    padding: 30px 20px;
+  }
+  .category-card h3 {
+    font-size: 20px;
+  }
+  /*----- Home Page Five CSS End -----*/
+  /*----- About Page CSS Start -----*/
+  .choose-card {
+    padding: 30px 15px;
+  }
+  /*----- About Page CSS End -----*/
+  /*----- Job Details Page CSS Start -----*/
+  .job-details-text .job-card .job-info {
+    padding-left: 15px;
+  }
+  .job-details-text .job-card .job-info h3 {
+    font-size: 20px;
+  }
+  /*----- Job Details Page CSS End -----*/
+  /*----- Blog Details Page CSS Start -----*/
+  .blog-widget {
+    padding: 15px;
+  }
+  /*----- Blog Details Page CSS End -----*/
+}
+
+@media (min-width: 1800px) {
+  .banner-style-four {
+    height: 900px;
+  }
+  .banner-style-four .banner-img {
+    max-width: 680px;
+  }
+  /*----- Home Page One CSS Start -----*/
+  /* Why Choose CSS */
+  .why-choose-text .media {
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
+  /* Footer CSS */
+  .footer-area::before {
+    right: 155px;
+    top: 180px;
+  }
+  /*----- Home Page One CSS End -----*/
+  /*----- Home Page Two CSS Start -----*/
+  .banner-style-two .banner-img {
+    top: 15%;
+    right: 15%;
+  }
+  /*----- Home Page Two CSS End -----*/
+}
+/*# sourceMappingURL=responsive.css.map */

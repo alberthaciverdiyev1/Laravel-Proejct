@@ -1,0 +1,11 @@
+{
+    "name": "Dash",
+    "alias": "dash",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Dash\\App\\Providers\\DashServiceProvider"
+    ],
+    "files": []
+}

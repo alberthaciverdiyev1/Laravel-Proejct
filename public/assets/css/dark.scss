@@ -1,0 +1,569 @@
+/*================================================
+Default CSS
+=================================================*/
+$red-color: #fd1616;
+$heading-color: #ffffff;
+$body-color: #ffffff;
+// Switch css
+.switch-box {
+    position: fixed;
+    z-index: 1;
+    left: 3%;
+    bottom: 80px;
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #4d4949;
+        transition: 0.4s;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 30px;
+            width: 30px;
+            left: 2.5px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: url(../img/night.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    input:checked + .slider {
+        background-color: #cbc1c1;
+    }
+    input:focus + .slider {
+        background-color: #4d4949;
+    }
+    input:checked + .slider:before {
+        transform: translateX(24px);
+        background: url(../img/sunny.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .slider {
+        &.round {
+            border-radius: 50px;
+
+            &:before {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+// Dark Style CSS
+.theme-dark {
+    body {
+        background-color: #000000;
+        color: #f1f1f1;
+    }
+    p {
+        color: #f1f1f1;
+
+        a {
+            color: #f1f1f1 !important;
+
+            &:hover {
+                color: $red-color !important;
+            }
+        }
+    }
+    a {
+        color: $body-color;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        color: $heading-color !important;
+        a {
+            color: $body-color !important;
+
+            &:hover {
+                color: $red-color !important;
+            }
+        }
+    }
+    .bg-color {
+        background-color: #0e0e0e;
+    }
+    //Section Title
+    .section-title {
+        .top-title {
+            &.title-color {
+                color: $body-color;
+            }
+        }
+    }
+    //Banner
+    .banner-section {
+        .banner-content {
+            .banner-form {
+                background: rgba(22, 21, 21, 0.8);
+                .form-group {
+                    label {
+                        color: $body-color;
+                    }
+                    .form-control {
+                        background-color: #000000;
+                        color: $body-color;
+                        &::placeholder {
+                            color: $body-color;
+                        }
+                    }
+                }
+            }
+        }
+        &::after {
+            background-image: unset;
+        }
+    }
+    .banner-style-three {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: #000000 !important;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: .7;
+        }
+        .banner-text {
+            position: relative;
+            p {
+                color: $body-color;
+            }
+        }
+    }
+
+    //Category
+    .category-card {
+        background-color: #0e0e0e;
+    }
+
+    //Job
+    .job-card {
+        background: #0e0e0e;
+        .thumb-img {
+            background: #000000;
+        }
+    }
+    .job-style-two {
+        background: #272727;
+    }
+    .job-card-two {
+        background: #000000;
+    }
+    .browse-job {
+        background: #232323;
+    }
+    .job-post-from {
+        background-color: #0e0e0e;
+        .form-group {
+            label {
+                color: $body-color;
+            }
+            .form-control {
+                background-color: #000000;
+                color: $body-color;
+                &::placeholder {
+                    color: $body-color;
+                }
+            }
+            .nice-select {
+               background-color: #000000;
+               .list {
+                   background-color: #272727;
+                }
+                .option {
+                    &.focus, &:hover {
+                        background-color: $red-color;
+                    }
+                }
+            }
+        }
+    }
+    .job-sidebar {
+        background: #0e0e0e;
+        ul {
+            li {
+                a {
+                    color: $body-color;
+                }
+            }
+        }
+    }
+
+    //Subscribe area
+    .subscribe-section {
+        background: #0e0e0e;
+    }
+
+    //Compani
+    .company-card {
+        background-color: #0e0e0e;
+    }
+
+    //Why Choose
+    .why-choose {
+        background: #0e0e0e;
+    }
+    .choose-style-two {
+        .why-choose-text {
+            .section-title {
+                p {
+                    color: $body-color;
+                }
+            }
+            .media {
+                .media-body {
+                    p {
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+
+    //Counter
+    .counter-area {
+        .counter-text {
+            h2 {
+                color: #fd1616 !important;
+            }
+        }
+    }
+    .counter-section {
+        background: #101011;
+    }
+
+    //Pricing
+    .price-card {
+        background-color: #1e1d1d;
+    }
+
+    //Candidate
+    .condidate-item {
+        .candidate-text {
+            background: #0e0e0e;
+        }
+    }
+    .candidate-card {
+        .candidate-text {
+            background: #0e0e0e;
+        }
+    }
+    .candidate-profile {
+        background-color: #0e0e0e;
+    }
+    .candidate-info-text {
+        background-color: #0e0e0e;
+    }
+
+    //Account
+    .account-information {
+        background-color: #0e0e0e;
+        ul {
+            li {
+                a {
+                    color: $body-color;
+                }
+            }
+        }
+    }
+    .account-details {
+        background-color: #0e0e0e;
+        form {
+            .form-group {
+                .form-control {
+                    background-color: #000000;
+                    color: $body-color;
+                    &::placeholder {
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+    //Sigh In
+    .signin-form {
+        background-color: #0e0e0e;
+        .form-group {
+            label {
+                color: $body-color;
+            }
+            .form-control {
+                background-color: #000000;
+                color: $body-color;
+                &::placeholder {
+                    color: $body-color;
+                }
+            }
+        }
+        .other-signin {
+            span {
+                color: $body-color;
+            }
+            ul {
+                li {
+                    a {
+                        i {
+                            background-color: #000000;
+                            &:hover {
+                                background-color: $red-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .reset-form {
+        background-color: #0e0e0e;
+        .form-group {
+            label {
+                color: $body-color;
+            }
+            .form-control {
+                background-color: #000000;
+                color: $body-color;
+                &::placeholder {
+                    color: $body-color;
+                }
+            }
+        }
+    }
+
+    //Resum Area
+    .resume-area {
+        background-color: #0e0e0e;
+        .resume-thumb-area {
+            .social-links {
+                a {
+                    i {
+                        color: $body-color;
+                        border-color: $body-color;
+                    }
+                }
+            }
+        }
+        .resume-content {
+            &.basic-info-text {
+                ul {
+                    li {
+                        span {
+                            color: $body-color;
+                        }
+                    }
+                }
+            }
+            &.skill {
+                span {
+                    color: $body-color;
+                }
+            }
+        }
+    }
+
+    //Faq
+    .faq-section {
+        .accordions {
+            .accordion-item {
+                .accordion-title {
+                    background-color: #0e0e0e;
+                }
+                .accordion-content {
+                    background-color: #242323;
+                }
+            }
+        }
+    }
+
+    //Sign Up
+    .signup-form {
+        background-color: #0e0e0e;
+        .form-group {
+            label {
+                color: $body-color;
+            }
+            .form-control {
+                background-color: #000000;
+                color: $body-color;
+                &::placeholder {
+                    color: $body-color;
+                }
+            }
+        }
+        .other-signup {
+            span {
+                color: $body-color;
+            }
+            ul {
+                li {
+                    a {
+                        i {
+                            background-color: #000000;
+                            &:hover {
+                                background-color: $red-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //testimonial
+    .testimonial-items {
+        .testimonial-text {
+            background: #272525;
+            p {
+                color: $body-color;
+            }
+        }
+    }
+
+    //Blog
+    .blog-card {
+        .blog-text {
+            background: #0e0c0c;
+        }
+    }
+    .blog-widget {
+        background-color: #0e0e0e;
+        &.blog-category {
+            ul {
+                li {
+                    a {
+                       color: $body-color;
+                       &:hover {
+                           color: $red-color;
+                       }
+                    }
+                }
+            }
+        }
+        &.blog-tags {
+            ul {
+                li {
+                    a {
+                        border: 1px dashed $body-color;
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+    .blog-dedails-text {
+         .details-tag {
+            background: #0e0e0e;
+            ul {
+                li{
+                    color: $body-color;
+                    a {
+                        color: $body-color;
+                        background-color: #000000;
+                        &:hover {
+                            background-color: $red-color;
+                        }
+                    }
+                }
+            }
+        }
+        .comment-form {
+            background-color: #0e0e0e;
+            .form-group {
+                label {
+                    color: $body-color;
+                }
+                .form-control {
+                    background: #000000;
+                    color: $body-color;
+                    &::placeholder {
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+
+    //Find Form
+    .find-form {
+        background: #1a1919;
+        .form-group {
+            .form-control {
+                background-color: #000000;
+                color: $body-color;
+                &::placeholder {
+                    color: $body-color;
+                }
+            }
+        }
+        .nice-select {
+           background-color: #000000;
+           color: $body-color;
+           .list {
+               background-color: #000000;
+           }
+           .option {
+            &.focus, &:hover {
+                background-color: $red-color;
+            }
+        }
+        }
+    }
+
+    //Contact
+    .contact-card {
+        background-color: #0e0e0e;
+        i {
+            color: $body-color;
+            border-color: $body-color;
+        }
+        ul {
+            li {
+                color: $body-color;
+                a {
+                    color: $body-color;
+                }
+            }
+        }
+    }
+    .contact-area {
+        background-color: #0e0e0e;
+        form {
+            .form-group {
+                .form-control {
+                    background: #000000;
+                    color: $body-color;
+                    &::placeholder {
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
