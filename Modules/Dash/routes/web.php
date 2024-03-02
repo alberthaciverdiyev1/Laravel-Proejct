@@ -22,11 +22,10 @@ Route::domain('{subdomain}.localhost.com')->group(function () {
 
 });
 
-
 Route::get('/', [HomeController::class, 'index'])->name('Home');
-Route::get('/about', [AboutController::class, 'index'])->name('About')->middleware('CheckUserAccess');
-Route::get('/join-as-master', [JoinAsMaster::class, 'index'])->name('joinAsMaster')->middleware('CheckUserAccess');
-Route::post('/join-as-master', [JoinAsMaster::class, 'action'])->middleware('CheckUserAccess');
+Route::get('/about', [AboutController::class, 'index'])->name('About')->middleware('role:super_admin');
+Route::get('/join-as-master', [JoinAsMaster::class, 'index'])->name('joinAsMaster')->middleware('role::user,developer,admin,manager,master');
+Route::post('/join-as-master', [JoinAsMaster::class, 'action'])->middleware('role::user,developer,admin,manager,master');
 
 Route::group(['prefix' => 'blog'], function () {
     Route::get('/list', [BlogController::class, 'index'])->name('blogIndex');

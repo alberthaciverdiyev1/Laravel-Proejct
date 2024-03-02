@@ -5,11 +5,23 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\DB;
 
 class Category extends Model
-{   use SoftDeletes;
+{
+    use SoftDeletes;
     use HasFactory;
-    protected $fillable = ['name','is_active','is_sub','parent_id','updater_id'];
+
+    protected $fillable = ['name', 'is_active', 'is_sub', 'parent_id', 'updater_id'];
+
+    public static function allCategories()
+    {
+        $categories = DB::table('categories')->select('id', 'name', 'slug','created_at','is_active')->whereNull('deleted_at')->get();
+        if ($categories->count() == 0) {
+            return response()->json(['status' => 'warning', 'message' => 'Categories not found'], 400);
+        }
+        return response()->json(['status' => 'success', 'message' => 'Categories found', 'data' => $categories], 200);
+    }
 
     public static function addCategory($data)
     {

@@ -17,7 +17,7 @@ class Admin extends Model
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes, HasRoles;
 
 
-    protected $fillable = ['name','email', 'password', "surname", "username", "phone", "is_active", "is_blocked"];
+    protected $fillable = ['name', 'email', 'password', "surname", "username", "phone", "is_active", "is_blocked"];
 
 
     public static function login2($data, $remember_me)
@@ -54,18 +54,22 @@ class Admin extends Model
             'password' => 'required|min:8'
         ]);
         $remember_me = $request->has('remember_me');
-
-        if (Auth::attempt($credentials, $remember_me)) {
-            $user = Auth::user();
-            $token = $user->createToken($user->name . '-AuthToken');
-            return response()->json([
-                'access_token' => $token->plainTextToken,
-            ]);
+        $remember_me = true;
+        $user = User::where('username', $request->username)->first();
+        $rolesToCheck = ['super_admin', 'manager', 'developer', 'admin'];
+        if ($user->hasAnyRole($rolesToCheck)) {
+            if (Auth::attempt($credentials, $remember_me)) {
+                $user = Auth::user();
+                $token = $user->createToken($user->name . '-AuthToken');
+                return response()->json([
+                    'access_token' => $token->plainTextToken,
+                ]);
+            }
         }
-
         return response()->json([
             'message' => 'Invalid Credentials'
         ], 401);
     }
+
 
 }

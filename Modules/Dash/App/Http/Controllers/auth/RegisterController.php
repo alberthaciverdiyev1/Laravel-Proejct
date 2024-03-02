@@ -38,7 +38,7 @@ class RegisterController extends Controller
         $validator = Validator::make($request->all(), $rules);
         if ($validator->fails()) {
             $messages = $validator->messages();
-            return response()->json(['status' => 200, 'message' => [$messages]]);
+            return response()->json(['status' => 404, 'message' => [$messages]]);
         }
         $request["password"] = Hash::make($request->password);
 

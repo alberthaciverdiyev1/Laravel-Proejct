@@ -12,26 +12,21 @@
 
                         <form class="banner-form">
                             <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Keyword:</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Job Title">
+                                <form>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Keyword:</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                                   placeholder="Job Title">
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail2">Location:</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="City or State">
+                                    <div class="col-md-4">
+                                        <button type="submit" class="find-btn">
+                                            Find A Job
+                                            <i class='bx bx-search'></i>
+                                        </button>
                                     </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <button type="submit" class="find-btn">
-                                        Find A Job
-                                        <i class='bx bx-search'></i>
-                                    </button>
-                                </div>
+                                </form>
                             </div>
                         </form>
 
@@ -55,7 +50,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <h2>Choose Your Category</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
             </div>
 
             <div class="row">
@@ -148,7 +144,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <h2>Jobs You May Be Interested In</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
             </div>
 
             <div class="row">
@@ -175,11 +172,11 @@
                                             Wellesley Rd, London
                                         </li>
                                         <li>
-                                            <i class='bx bx-filter-alt' ></i>
+                                            <i class='bx bx-filter-alt'></i>
                                             Accountancy
                                         </li>
                                         <li>
-                                            <i class='bx bx-briefcase' ></i>
+                                            <i class='bx bx-briefcase'></i>
                                             Freelance
                                         </li>
                                     </ul>
@@ -193,7 +190,7 @@
                                         <i class='bx bx-heart'></i>
                                     </a>
                                     <p>
-                                        <i class='bx bx-stopwatch' ></i>
+                                        <i class='bx bx-stopwatch'></i>
                                         1 Hr Ago
                                     </p>
                                 </div>
@@ -225,11 +222,11 @@
                                             Street 40/A, London
                                         </li>
                                         <li>
-                                            <i class='bx bx-filter-alt' ></i>
+                                            <i class='bx bx-filter-alt'></i>
                                             Data Entry
                                         </li>
                                         <li>
-                                            <i class='bx bx-briefcase' ></i>
+                                            <i class='bx bx-briefcase'></i>
                                             Freelance
                                         </li>
                                     </ul>
@@ -242,7 +239,7 @@
                                         <i class='bx bx-heart'></i>
                                     </a>
                                     <p>
-                                        <i class='bx bx-stopwatch' ></i>
+                                        <i class='bx bx-stopwatch'></i>
                                         3 Hr Ago
                                     </p>
                                 </div>
@@ -274,11 +271,11 @@
                                             West Sight, USA
                                         </li>
                                         <li>
-                                            <i class='bx bx-filter-alt' ></i>
+                                            <i class='bx bx-filter-alt'></i>
                                             Graphics
                                         </li>
                                         <li>
-                                            <i class='bx bx-briefcase' ></i>
+                                            <i class='bx bx-briefcase'></i>
                                             Freelance
                                         </li>
                                     </ul>
@@ -291,7 +288,7 @@
                                         <i class='bx bx-heart'></i>
                                     </a>
                                     <p>
-                                        <i class='bx bx-stopwatch' ></i>
+                                        <i class='bx bx-stopwatch'></i>
                                         4 Hr Ago
                                     </p>
                                 </div>
@@ -323,11 +320,11 @@
                                             San Francisco, California
                                         </li>
                                         <li>
-                                            <i class='bx bx-filter-alt' ></i>
+                                            <i class='bx bx-filter-alt'></i>
                                             Development
                                         </li>
                                         <li>
-                                            <i class='bx bx-briefcase' ></i>
+                                            <i class='bx bx-briefcase'></i>
                                             Freelance
                                         </li>
                                     </ul>
@@ -340,7 +337,7 @@
                                         <i class='bx bx-heart'></i>
                                     </a>
                                     <p>
-                                        <i class='bx bx-stopwatch' ></i>
+                                        <i class='bx bx-stopwatch'></i>
                                         5 Hr Ago
                                     </p>
                                 </div>
@@ -372,11 +369,11 @@
                                             Wellesley Rd, London
                                         </li>
                                         <li>
-                                            <i class='bx bx-filter-alt' ></i>
+                                            <i class='bx bx-filter-alt'></i>
                                             Marketing
                                         </li>
                                         <li>
-                                            <i class='bx bx-briefcase' ></i>
+                                            <i class='bx bx-briefcase'></i>
                                             Freelance
                                         </li>
                                     </ul>
@@ -389,7 +386,7 @@
                                         <i class='bx bx-heart'></i>
                                     </a>
                                     <p>
-                                        <i class='bx bx-stopwatch' ></i>
+                                        <i class='bx bx-stopwatch'></i>
                                         6 Hr Ago
                                     </p>
                                 </div>
@@ -421,11 +418,11 @@
                                             Zoo Rd, London
                                         </li>
                                         <li>
-                                            <i class='bx bx-filter-alt' ></i>
+                                            <i class='bx bx-filter-alt'></i>
                                             Accountancy
                                         </li>
                                         <li>
-                                            <i class='bx bx-briefcase' ></i>
+                                            <i class='bx bx-briefcase'></i>
                                             Freelance
                                         </li>
                                     </ul>
@@ -438,7 +435,7 @@
                                         <i class='bx bx-heart'></i>
                                     </a>
                                     <p>
-                                        <i class='bx bx-stopwatch' ></i>
+                                        <i class='bx bx-stopwatch'></i>
                                         8 Hr Ago
                                     </p>
                                 </div>
@@ -495,7 +492,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <h2>Top Companies</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
             </div>
 
             <div class="row">
@@ -507,7 +505,7 @@
                             </a>
                         </div>
                         <div class="company-text">
-                            <h3>Trophy  & Sans</h3>
+                            <h3>Trophy & Sans</h3>
                             <p>
                                 <i class='bx bx-location-plus'></i>
                                 Green Lanes, London
@@ -591,7 +589,8 @@
                     <div class="why-choose-text pt-100 pb-70">
                         <div class="section-title text-center">
                             <h2>Why You Choose Jovie?</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorei.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolorei.</p>
                         </div>
 
                         <div class="row">
@@ -724,7 +723,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <h2>Buy Our Plans & Packages</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
             </div>
 
             <div class="row">
@@ -754,7 +754,7 @@
                         </div>
 
                         <div class="price-btn">
-                            <a href="post-job.html">Find A  Job</a>
+                            <a href="post-job.html">Find A Job</a>
                         </div>
                     </div>
                 </div>
@@ -789,7 +789,7 @@
                         </div>
 
                         <div class="price-btn">
-                            <a href="post-job.html">Find A  Job</a>
+                            <a href="post-job.html">Find A Job</a>
                         </div>
                     </div>
                 </div>
@@ -820,7 +820,7 @@
                         </div>
 
                         <div class="price-btn">
-                            <a href="post-job.html">Find A  Job</a>
+                            <a href="post-job.html">Find A Job</a>
                         </div>
                     </div>
                 </div>
@@ -834,7 +834,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <h2>Featured Candidates</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
             </div>
 
             <div class="condidate-slider owl-carousel owl-theme">
@@ -900,7 +901,7 @@
                                 8D ago
                             </p>
                             <a href="#">
-                                <i class='bx bx-heart' ></i>
+                                <i class='bx bx-heart'></i>
                             </a>
                         </div>
                     </div>
@@ -1119,7 +1120,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <h2>What Client’s Say About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
             </div>
 
             <div class="row">
@@ -1132,13 +1134,19 @@
                                 </div>
                                 <div class="testimonial-img-text">
                                     <h3>Alisa Meair</h3>
-                                    <p>CEO of  Company</p>
+                                    <p>CEO of Company</p>
                                 </div>
                             </div>
                             <div class="col-lg-7 p-0">
                                 <div class="testimonial-text">
                                     <i class='flaticon-left-quotes-sign'></i>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do mod tempor
+                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem
+                                        Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                        has been the industry's standard dummy Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                        dummy</p>
                                 </div>
                             </div>
                         </div>
@@ -1158,7 +1166,13 @@
                             <div class="col-lg-7 p-0">
                                 <div class="testimonial-text">
                                     <i class='flaticon-left-quotes-sign'></i>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do mod tempor
+                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem
+                                        Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                        has been the industry's standard dummy Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                        dummy</p>
                                 </div>
                             </div>
                         </div>
@@ -1174,7 +1188,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <h2>News, Tips & Articles</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
             </div>
 
             <div class="row">
@@ -1202,7 +1217,8 @@
                                     How to Indroduce in Yourself in Job Interview?
                                 </a>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
 
                             <a href="blog-details.html" class="blog-btn">
                                 Read More
@@ -1236,7 +1252,8 @@
                                     Looking for Highly Motivated Product to Build
                                 </a>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
 
                             <a href="blog-details.html" class="blog-btn">
                                 Read More
@@ -1270,7 +1287,8 @@
                                     The Reason Why Software Develope is the Best Job
                                 </a>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
 
                             <a href="blog-details.html" class="blog-btn">
                                 Read More
@@ -1283,8 +1301,5 @@
         </div>
     </section>
     <!-- Blog Section End -->
-
-
-
 
 @endsection

@@ -47,7 +47,8 @@ class LoginController extends Controller
             $messages = $validator->messages();
             return response()->json(['status' => 400, 'message' => $messages], 400);
         }
-        $res = User::login($request);
+        $roles = ['admin','super_admin','moderator','developer'];
+        $res = Admin::login($request,$roles);
 
         return response()->json($res);
     }

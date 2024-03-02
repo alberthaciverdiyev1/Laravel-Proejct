@@ -6,6 +6,9 @@ use Modules\Admin\App\Http\Controllers\Category\CategoryAllController;
 use Modules\Admin\App\Http\Controllers\Category\CategoryAddController;
 use Modules\Admin\App\Http\Controllers\Home\HomeController;
 use Modules\Admin\App\Http\Controllers\Auth\LoginController;
+use Modules\Admin\App\Http\Controllers\Setting\SettingAddController;
+use Modules\Admin\App\Http\Controllers\Setting\SettingAllController;
+use Modules\Admin\App\Http\Controllers\Setting\SettingEditController;
 use Modules\Admin\App\Http\Controllers\UserControl\RoleController;
 use Modules\Admin\App\Http\Controllers\UserControl\PermissionController;
 
@@ -40,8 +43,17 @@ Route::middleware('auth:sanctum')->prefix('admin')->group(function () {
 //    Route::delete('/{id}/delete-role',[RoleController::class,'delete'])->name('role.delete');
     Route::get('/{id}/delete-permission',[PermissionController::class,'delete'])->name('permission.delete');
     //Settings
+    Route::get('/settings',[SettingAllController::class,'all'])->name('setting.all');
+    Route::get('/settings/add',[SettingAddController::class,'addIndex'])->name('setting.add');
+    Route::post('/settings/add',[SettingAddController::class,'add']);
+    Route::get('/{id}/settings/edit',[SettingEditController::class,'edit'])->name('setting.update');
+    Route::post('/{id}/settings/edit',[SettingEditController::class,'editAction']);
+    Route::post('/settings/add',[SettingAddController::class,'add']);
+
+    Route::get('/{id}/settings/delete',[SettingEditController::class,'delete'])->name('setting.delete');
 
 });
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

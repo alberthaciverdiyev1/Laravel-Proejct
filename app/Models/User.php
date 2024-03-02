@@ -55,9 +55,8 @@ class User extends Authenticatable
             "username" => $data->username,
             "password" => $data->password
         ]);
-//        Role::create(['name' => 'admin']);
-
-
+        $userModel = User::find($user->id);
+        $userModel->assignRole('user');
         if (!$user) {
             return response()->json(['status' => 404, 'message' => 'Register failed']);
         }

@@ -4,7 +4,7 @@ namespace Modules\Admin\App\Http\Controllers\Setting;
 
 use App\Http\Controllers\Controller;
 
-class SettingAllController extends Controller
+class SettingAddController extends Controller
 {
     public function index()
     {

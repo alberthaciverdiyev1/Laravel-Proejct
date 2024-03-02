@@ -26,14 +26,6 @@
                                 <table class="table table-responsive-sm mb-0">
                                     <thead>
                                     <tr>
-                                        <th style="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="checkAll">
-                                                <label class="form-check-label" for="checkAll">
-
-                                                </label>
-                                            </div>
-                                        </th>
                                         <th><strong>S.No</strong></th>
                                         <th><strong>Title</strong></th>
                                         <th><strong>Modified</strong></th>
@@ -42,132 +34,18 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($categories as $key => $category)
                                     <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1">
-                                                <label class="form-check-label" for="flexCheckDefault-1">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td><b>1</b></td>
-                                        <td>How To Teach Fitness Like A Pro.</td>
-                                        <td>01 August 2023</td>
-                                        <td class="recent-stats"><i class="fa fa-circle text-success me-1"></i>Successful</td>
+                                        <td><b>{{$key+1}}</b></td>
+                                        <td>{{$category->name}}</td>
+                                        <td>{{$category->created_at}}</td>
+                                        <td class="recent-stats"><i class="fa fa-circle text-{{$category->is_active===1 ? "success" : "danger"}} me-1"></i></td>
                                         <td>
                                             <a href="javascript:void(0);" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
                                             <a href="javascript:void(0);" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2">
-                                                <label class="form-check-label" for="flexCheckDefault-2">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td><b>2</b></td>
-                                        <td>Quick and Easy Fix For Your Fitness.</td>
-                                        <td>01 August 2023</td>
-                                        <td class="recent-stats"><i class="fa fa-circle text-danger me-1"></i>Canceled</td>
-                                        <td>
-                                            <a href="javascript:void(0);" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0);" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-3">
-                                                <label class="form-check-label" for="flexCheckDefault-3">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td><b>3</b></td>
-                                        <td>Things That Make You Love Fitness.</td>
-                                        <td>01 August 2023</td>
-                                        <td class="recent-stats"><i class="fa fa-circle text-warning me-1"></i>Pending</td>
-                                        <td>
-                                            <a href="javascript:void(0);" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0);" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-4">
-                                                <label class="form-check-label" for="flexCheckDefault-4">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td><b>4</b></td>
-                                        <td>How to keep your Body.</td>
-                                        <td>01 August 2023</td>
-                                        <td class="recent-stats"><i class="fa fa-circle text-warning me-1"></i>pending</td>
-                                        <td>
-                                            <a href="javascript:void(0);" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0);" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-5">
-                                                <label class="form-check-label" for="flexCheckDefault-5">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td><b>5</b></td>
-                                        <td>Relax Your Body</td>
-                                        <td>01 August 2023</td>
-                                        <td class="recent-stats"><i class="fa fa-circle text-danger me-1"></i>Canceled</td>
-                                        <td>
-                                            <a href="javascript:void(0);" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0);" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-6">
-                                                <label class="form-check-label" for="flexCheckDefault-6">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td><b>6</b></td>
-                                        <td>Origins Of Meditation</td>
-                                        <td>01 June 2023</td>
-                                        <td class="recent-stats"><i class="fa fa-circle text-success me-1"></i>Successful</td>
-                                        <td>
-                                            <a href="javascript:void(0);" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0);" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-7">
-                                                <label class="form-check-label" for="flexCheckDefault-7">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td><b>7</b></td>
-                                        <td>Meditation Workshop</td>
-                                        <td>01 May 2023</td>
-                                        <td class="recent-stats"><i class="fa fa-circle text-success me-1"></i>Successful</td>
-                                        <td>
-                                            <a href="javascript:void(0);" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0);" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
 

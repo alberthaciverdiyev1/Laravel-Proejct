@@ -1,13 +1,20 @@
 <?php
 
-namespace Modules\Admin\App\Http\Controllers\Home;
+namespace Modules\Admin\App\Http\Controllers\Setting;
 
 use App\Http\Controllers\Controller;
+use App\Models\Setting;
+use http\Env\Request;
 
-class HomeController extends Controller
+class SettingAllController extends Controller
 {
-    public function index()
+    public function all()
     {
-        return view('admin::home.index');
+        $setting = Setting::allSettings();
+        $settings = json_decode($setting->getContent(), false)->data;
+        $settings = isset($settings) ? $settings : [];
+        return view('admin::setting.all', compact('settings'));
     }
+
+
 }

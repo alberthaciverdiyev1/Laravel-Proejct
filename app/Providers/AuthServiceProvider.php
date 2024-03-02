@@ -4,6 +4,8 @@ namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Gate;
+use Laravel\Sanctum\Sanctum;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -21,6 +23,12 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Gate::before(function ($user, $ability) {
+            return $user->hasRole('super_admin') ? true : null;
+        });
+//        $this->registerPolicies();
+//        Sanctum::defineRoles([
+//            'super_admin' => 'Super Admin',
+//        ]);
     }
 }

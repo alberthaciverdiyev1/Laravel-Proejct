@@ -11,10 +11,15 @@
                         </div>
                         <div class="card-body">
                             <div class="basic-form">
-                                <form action="{{route("role.update",$role['id'])}}" method="post">
+                                <form action="{{route("setting.update",$setting->id)}}" method="post">
                                     @csrf
                                     <div class="mb-3">
-                                        <input type="text" name="name" class="form-control input-default" value="{{$role['name']}}" placeholder="Role Name">
+                                        <label>
+                                            <input type="text" name="key" class="form-control input-default" value="{{$setting->key}}" placeholder="Setting Key">
+                                        </label>
+                                        <label>
+                                            <input type="text" name="value" class="form-control input-default" value="{{$setting->value}}" placeholder="Setting Value">
+                                        </label>
                                     </div>
                                     <button type="submit" class="btn-primary mx-auto">Update role</button>
                                 </form>
@@ -22,7 +27,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

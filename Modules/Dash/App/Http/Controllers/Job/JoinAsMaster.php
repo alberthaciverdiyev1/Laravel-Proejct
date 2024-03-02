@@ -14,7 +14,6 @@ class JoinAsMaster extends Controller
 {
     function __construct()
     {
-        $this->middleware('CheckUserAccess');
     }
 
     public function index()
