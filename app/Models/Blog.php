@@ -11,16 +11,16 @@ class Blog extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable = ['title','description','publish_start_date','publish_end_date','is_active'];
+    protected $fillable = ['title', 'description', 'publish_start_date', 'publish_end_date', 'is_active','creator_id','read_count'];
 
     public function list()
     {
-        return Blog::select('id', 'title', 'description','created_at','publish_start_date')->get();
+        return Blog::select('id', 'title', 'description', 'created_at', 'publish_start_date')->get();
     }
 
     public static function addBlog($data)
     {
-         self::create($data);
+        self::create($data);
 
         return response()->json([
             'status' => 'success',

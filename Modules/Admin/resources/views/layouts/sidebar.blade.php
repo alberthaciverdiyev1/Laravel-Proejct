@@ -50,6 +50,16 @@
                     <span class="nav-text">Settings</span>
                 </a>
             </li>
+            <li><a class="has-arrow ai-icon" href="{{route('setting.all')}}">
+                    <i class="fa-solid fa-gear fw-bold"></i>
+                    <span class="nav-text">Master requests</span>
+                </a>
+            </li>
+            <li><a class="has-arrow ai-icon" href="{{route('setting.all')}}">
+                    <i class="fa-solid fa-gear fw-bold"></i>
+                    <span class="nav-text">Users</span>
+                </a>
+            </li>
         </ul>
         <div class="copyright">
             <p><strong>Dompet Payment Admin Dashboard</strong> © 2023 All Rights Reserved</p>

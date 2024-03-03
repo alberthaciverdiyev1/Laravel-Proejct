@@ -4,12 +4,12 @@
     <section class="page-title title-bg3">
         <div class="d-table">
             <div class="d-table-cell">
-                <h2>Post a Job</h2>
+                <h2>Join Our Team</h2>
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li>Post a Job</li>
+                    <li>Join Our Team</li>
                 </ul>
             </div>
         </div>

@@ -28,6 +28,7 @@
                 <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-3">
                     <form class="signup-form" action="{{route('register.action')}}" method="post">
                         @csrf
+
                         <div class="form-group">
                             <label>Enter Username</label>
                             <input type="text" name="username" class="form-control" placeholder="Enter Username" required>
@@ -55,7 +56,10 @@
                             <label>Confirm Password</label>
                             <input type="password" name="confirm_password" class="form-control" placeholder="Enter Your Password" required>
                         </div>
-
+                        <div class="form-group">
+                            <label>MASTER ?</label>
+                            <input type="checkbox" name="role">
+                        </div>
                         <div class="signup-btn text-center">
                             <button type="submit">Sign Up</button>
                         </div>

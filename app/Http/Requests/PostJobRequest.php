@@ -4,14 +4,14 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class postJob extends FormRequest
+class postJobRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,11 @@ class postJob extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'category_id' => 'required',
+            'subcategory_id' => 'required',
+            'city_id' => 'required',
+            'town_id' => 'required',
+            'description' => 'max:500',
         ];
     }
 }

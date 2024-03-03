@@ -5,7 +5,7 @@ namespace Modules\Dash\App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Validator;
+use \Illuminate\Support\Facades\Validator;
 
 class BlogController extends Controller
 {
@@ -24,24 +24,24 @@ class BlogController extends Controller
 
     public function addBlog(Request $request)
     {
-        $validator = $request->validate([
+        $this->middleware('role::developer,admin,manager');
+        $rules = [
             'title' => 'required|max:255',
             'description' => 'required|string',
-        ]);
-        return response()->json($validator);
+        ];
+
+        $validator = Validator::make($request->all(), $rules);
 
         if ($validator->fails()) {
-            return response()->json([
-                'status' => 'error',
-                'message' => $validator->errors(),
-            ], 422);
+            $messages = $validator->messages();
+            return response()->json(['status' => 400, 'message' => $messages], 400);
         }
-
      $res = Blog::addBlog([
          'title' => $request->input('title'),
          'description' => $request->input('description'),
          'publish_start_date' => $request->input('publish_start_date'),
          'publish_end_date' => $request->input('publish_end_date'),
+         'creator_id' => auth()->user()->id
         ]);
 
         return response()->json($res);

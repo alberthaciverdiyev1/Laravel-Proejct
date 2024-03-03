@@ -3,14 +3,19 @@
 namespace Modules\Dash\App\Http\Controllers\Job;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\postJobRequest;
+use App\Models\Category;
+use App\Models\City;
+use App\Models\Job;
 use App\Models\Master;
+use App\Models\Town;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
-class JoinAsMaster extends Controller
+class JobController extends Controller
 {
     function __construct()
     {
@@ -42,6 +47,35 @@ class JoinAsMaster extends Controller
         $request['user_id'] = Auth::user()->id;
         $request['is_active'] = 0;
         $res = Master::createMaster($request);
+        return \response()->json($res);
+    }
+
+    public function postJobIndex()
+    {
+        $data = [
+            'categories' => Category::allCategories(),
+            'subcategories' => Category::allSubCategories(),
+            'cities' => City::allCities(),
+            'towns' => Town::allTowns(),
+        ];
+        $data = json_decode(json_encode($data), false);
+        $data = isset($data) ? $data : [];
+
+        return view('dash::Job.post', compact('data'));
+    }
+
+
+    public function postJob(postJobRequest $request)
+    {
+        $data = [
+            'category_id' => $request->category_id,
+            'subcategory_id' => $request->subcategory_id,
+            'city_id' => $request->city_id,
+            'town_id' => $request->town_id,
+            'description' => $request->description,
+            'user_id' => \auth()->user()->id
+        ];
+        $res = Job::postJob($data);
         return \response()->json($res);
     }
 }

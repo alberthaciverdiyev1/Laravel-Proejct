@@ -41,8 +41,9 @@ class RegisterController extends Controller
             return response()->json(['status' => 404, 'message' => [$messages]]);
         }
         $request["password"] = Hash::make($request->password);
+        $role = $request->role;
 
-        $res = User::registerUser($request);
+        $res = User::registerUser($request,$role);
 
         return response()->json($res);
     }

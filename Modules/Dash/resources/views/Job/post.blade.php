@@ -24,7 +24,7 @@
     <!-- Post Job Section Start -->
     <div class="job-post ptb-100">
         <div class="container">
-            <form class="job-post-from" method="post" action="{{route('joinAsMaster')}}">
+            <form class="job-post-from" method="post" action="{{route('post.job')}}">
                 @csrf
                 <h2>Fill Up Your Job information</h2>
                 <div class="row">
@@ -32,12 +32,10 @@
                         <div class="form-group">
                             <label>Category</label>
                             <select class="category" name="category_id">
-                                <option data-display="Category">Category</option>
-                                <option value="1">Web Development</option>
-                                <option value="2">Graphics Design</option>
-                                <option value="4">Data Entry</option>
-                                <option value="5">Visual Editor</option>
-                                <option value="6">Office Assistant</option>
+                                <option disabled value="">Category</option>
+                                @foreach($data->categories->original->data as $key => $category)
+                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>
@@ -45,37 +43,21 @@
                         <div class="form-group">
                             <label>SubCategory</label>
                             <select class="category" name="subcategory_id">
-                                <option data-display="Category">Category</option>
-                                <option value="1">Web Development</option>
-                                <option value="2">Graphics Design</option>
-                                <option value="4">Data Entry</option>
-                                <option value="5">Visual Editor</option>
-                                <option value="6">Office Assistant</option>
+                                <option disabled value="">Select SubCategory</option>
+                                @foreach($data->subcategories->original->data as $key => $subcategory)
+                                    <option value="{{$subcategory->id}}">{{$subcategory->name}}</option>
+                                @endforeach
                             </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Phone Number</label>
-                            <input type="number" name="phone" class="form-control" id="exampleInput1" placeholder="Phone number" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>FIN Code</label>
-                            <input type="text" class="form-control" name="FIN" id="exampleInput2" placeholder="FIN Code" maxlength="7" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>City</label>
                             <select class="category" name="city_id">
-                                <option data-display="Category">Category</option>
-                                <option value="1">Web Development</option>
-                                <option value="2">Graphics Design</option>
-                                <option value="4">Data Entry</option>
-                                <option value="5">Visual Editor</option>
-                                <option value="6">Office Assistant</option>
+                                <option disabled value="">Select City</option>
+                                @foreach($data->cities->original->data as $key => $city)
+                                    <option value="{{$city->id}}">{{$city->name}}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>
@@ -83,12 +65,10 @@
                         <div class="form-group">
                             <label>Town</label>
                             <select class="category" name="town_id">
-                                <option data-display="Category">Category</option>
-                                <option value="1">Web Development</option>
-                                <option value="2">Graphics Design</option>
-                                <option value="4">Data Entry</option>
-                                <option value="5">Visual Editor</option>
-                                <option value="6">Office Assistant</option>
+                                <option disabled value="">Town</option>
+                                @foreach($data->towns->original->data as $key => $town)
+                                    <option value="{{$town->id}}">{{$town->name}}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>

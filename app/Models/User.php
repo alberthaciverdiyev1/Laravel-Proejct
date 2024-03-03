@@ -46,7 +46,7 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public static function registerUser($data)
+    public static function registerUser($data,$role)
     {
         $user = self::create([
             "name" => $data->name,
@@ -56,7 +56,7 @@ class User extends Authenticatable
             "password" => $data->password
         ]);
         $userModel = User::find($user->id);
-        $userModel->assignRole('user');
+        $userModel->assignRole($role);
         if (!$user) {
             return response()->json(['status' => 404, 'message' => 'Register failed']);
         }
