@@ -1,6 +1,7 @@
 {{--<!-- jQuery first, then Bootstrap JS -->--}}
-{{--<script src="{{asset('assets/js/jquery.min.js')}}"></script>--}}
-{{--<script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>--}}
+<script src="{{asset('assets/js/jquery.min.js')}}"></script>
+<script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets/js/custom_js/home.js')}}"></script>
 {{--<!-- Owl Carousel JS -->--}}
 {{--<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>--}}
 {{--<!-- Nice Select JS -->--}}

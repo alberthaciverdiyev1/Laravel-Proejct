@@ -8,6 +8,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
+use Modules\Dash\App\Http\Controllers\Job\JobController;
 
 class HomeController extends Controller
 {

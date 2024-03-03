@@ -73,9 +73,21 @@ class JobController extends Controller
             'city_id' => $request->city_id,
             'town_id' => $request->town_id,
             'description' => $request->description,
-            'user_id' => \auth()->user()->id
+            'user_id' => \auth()->user()->id,
+            'is_service' => auth()->user()->hasRole('user') ? 0 :1
         ];
         $res = Job::postJob($data);
         return \response()->json($res);
+    }
+
+    public function getAllJobs(Request $request)
+    {
+        $filter = $request->filter;
+        $filter = ($filter === 'jobs') ? 0 : (($filter === 'services') ? 1 : 0);
+        $res = Job::getAllJobs($filter);
+//        $data = json_decode(json_encode($res), false);
+//        $data = isset($data) ? $data : [];
+        return $res;
+
     }
 }
