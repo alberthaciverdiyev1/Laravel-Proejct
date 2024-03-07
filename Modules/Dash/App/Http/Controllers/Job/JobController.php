@@ -70,12 +70,11 @@ class JobController extends Controller
         return view('dash::Job.post', compact('data'));
     }
 
-    public function allJobsIndex(Request $request)
+    public function allJobsIndex($service ,Request $request)
     {
-//        $filter = ($request->input()->filter === 'jobs') ? 0 : (($request->input()->filter === 'services') ? 1 : 0);
-        $filter = 0;
+        $filter = ($service === 'jobs') ? 0 : (($service === 'services') ? 1 : 0);
         $data['jobs'] = Job::getAllJobs($filter)->original['data'];
-        $data['categories'] = Category::allCategories()->original['data'];
+        $data['categories'] = Category::allCategories($filter)->original['data'];
         $data['subcategories'] = Category::allSubCategories()->original['data'];
 //        return \response()->json($data);
 //        $res = isset($res->original['data']) ? $res->original['data'] : [];

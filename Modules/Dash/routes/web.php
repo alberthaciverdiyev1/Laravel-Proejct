@@ -28,8 +28,8 @@ Route::get('/join-as-master', [JobController::class, 'index'])->name('joinAsMast
 Route::post('/join-as-master', [JobController::class, 'action'])->middleware('role::user,developer,admin,manager,master');
 //Jobs
 Route::get('/post-job', [JobController::class, 'postJobIndex'])->middleware('role::user,developer,admin,manager,master')->name('post.job');
-Route::get('/job-all', [JobController::class, 'getAllJobs'])->name('job.all');
-Route::get('/job-all', [JobController::class, 'allJobsIndex'])->name('page.job.all');
+Route::get('/job-all-ajax', [JobController::class, 'getAllJobs'])->name('job.all');
+Route::get('/job-all/{filter}', [JobController::class, 'allJobsIndex'])->name('page.job.all');
 Route::get('/{id}/job-details', [JobController::class, 'jobDetails'])->name('job.details');
 Route::post('/post-job', [JobController::class, 'postJob'])->middleware('role::user,developer,admin,manager,master');
 

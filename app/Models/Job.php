@@ -25,7 +25,7 @@ class Job extends Model
         }
     }
 
-    public static function getAllJobs($filter, $limit = 20)
+    public static function getAllJobs($filter, $limit = 200)
     {
         $jobs = DB::table('jobs')
             ->select(
@@ -59,7 +59,8 @@ class Job extends Model
             ->whereNull('jobs.deleted_at')
             ->where('jobs.is_active', '=', 1)
             ->where('is_service', '=', $filter)
-            ->limit($limit)->orderBy('jobs.updated_at', 'desc')->get();
+            ->orderByRaw('COALESCE(jobs.updated_at, jobs.created_at) DESC')
+            ->limit($limit)->get();
         if ($jobs->count() == 0) {
             return response()->json(['code' => 400, 'status' => 'warning', 'message' => 'Jobs not found'], 400);
         }

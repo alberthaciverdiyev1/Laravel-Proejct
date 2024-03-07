@@ -29,10 +29,13 @@
                                class="nav-link {{Route::currentRouteName() === 'About' ? 'active' : ''}}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('page.job.all')}}"
-                               class="nav-link {{Route::currentRouteName() === 'page.job.all' ? 'active' : ''}}">Jobs</a>
+                            <a href="{{route('page.job.all','jobs')}}"
+                               class="nav-link {{ request()->route('filter') === 'jobs' ? 'active' : '' }}">Jobs</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a href="{{route('page.job.all','services')}}"
+                               class="nav-link {{ request()->route('filter') === 'services' ? 'active' : '' }}">Services</a>
+                        </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact Us</a>
                         </li>

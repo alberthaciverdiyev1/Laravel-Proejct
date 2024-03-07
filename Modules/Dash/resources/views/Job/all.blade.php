@@ -2,10 +2,6 @@
 @section('body')
     <section class="blog-section blog-style-two pt-100 pb-70">
         <div class="container">
-            <div class="section-title text-center">
-                <h2>News, Tips & Articles</h2>
-            </div>
-
             <div class="row">
                 <div class="col-lg-4">
                     <div class="blog-widget blog-search">
@@ -58,7 +54,7 @@
                                                 {{$job->subcategory_name}}
                                             </a>
                                         </h3>
-                                        <p>{{strlen($job->description) >200 ? substr($job->description,0,200).'...' : $job->description}}</p>
+                                        <p>{{strlen($job->description) >45 ? substr($job->description,0,45).'...' : $job->description}}</p>
 
                                         <a href="{{route('job.details',$job->id)}}" class="blog-btn">
                                             Read More
@@ -78,8 +74,8 @@
                                     <i class='bx bx-chevrons-left bx-fade-left'></i>
                                 </a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
                                 <a class="page-link" href="#">

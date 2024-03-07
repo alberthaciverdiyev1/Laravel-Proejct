@@ -14,8 +14,9 @@ class Category extends Model
 
     protected $fillable = ['name', 'is_active', 'is_sub', 'parent_id', 'updater_id'];
 
-    public static function allCategories()
+    public static function allCategories($filter)
     {
+        $filter = $filter ?: 0;
         $categories = DB::table('categories')
             ->select(
                 'categories.id',
@@ -23,12 +24,15 @@ class Category extends Model
                 'categories.slug',
                 'categories.created_at',
                 'categories.is_active',
-                DB::raw('COUNT(jobs.id) as job_count')
+                DB::raw('IFNULL(COUNT(jobs.id), 0) as job_count')
             )->leftJoin('jobs', 'categories.id', '=', 'category_id')
-            ->whereNull('jobs.deleted_at')->where('jobs.is_active','=',1)
+            ->whereNull('jobs.deleted_at')
+            ->where('jobs.is_active', '=', 1)
+            ->where('jobs.is_service', '=', $filter)
             ->whereNull('categories.deleted_at')
             ->whereNull('categories.is_sub')
             ->groupBy('categories.id')
+            ->orderBy('categories.name')
             ->get();
         if ($categories->count() == 0) {
             return response()->json(['status' => 'warning', 'message' => 'Categories not found'], 400);

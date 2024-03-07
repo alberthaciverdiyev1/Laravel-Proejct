@@ -65,7 +65,7 @@ $(function () {
             filter: filter
         };
         $.ajax({
-            url: '/job-all',
+            url: '/job-all-ajax',
             data: data,
             type: 'GET',
             dataType: 'json',
