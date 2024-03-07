@@ -50,7 +50,7 @@
                     <span class="nav-text">Settings</span>
                 </a>
             </li>
-            <li><a class="has-arrow ai-icon" href="{{route('setting.all')}}">
+            <li><a class="has-arrow ai-icon" href="{{route('master.requests')}}">
                     <i class="fa-solid fa-gear fw-bold"></i>
                     <span class="nav-text">Master requests</span>
                 </a>

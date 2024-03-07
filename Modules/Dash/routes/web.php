@@ -29,6 +29,8 @@ Route::post('/join-as-master', [JobController::class, 'action'])->middleware('ro
 //Jobs
 Route::get('/post-job', [JobController::class, 'postJobIndex'])->middleware('role::user,developer,admin,manager,master')->name('post.job');
 Route::get('/job-all', [JobController::class, 'getAllJobs'])->name('job.all');
+Route::get('/job-all', [JobController::class, 'allJobsIndex'])->name('page.job.all');
+Route::get('/{id}/job-details', [JobController::class, 'jobDetails'])->name('job.details');
 Route::post('/post-job', [JobController::class, 'postJob'])->middleware('role::user,developer,admin,manager,master');
 
 Route::group(['prefix' => 'blog'], function () {

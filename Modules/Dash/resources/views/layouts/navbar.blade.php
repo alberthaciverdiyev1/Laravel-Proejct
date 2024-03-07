@@ -29,19 +29,10 @@
                                class="nav-link {{Route::currentRouteName() === 'About' ? 'active' : ''}}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Jobs</a>
+                            <a href="{{route('page.job.all')}}"
+                               class="nav-link {{Route::currentRouteName() === 'page.job.all' ? 'active' : ''}}">Jobs</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle">Candidates</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="candidate.html" class="nav-link">Candidates</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="candidate-details.html" class="nav-link">Candidates Details</a>
-                                </li>
-                            </ul>
-                        </li>
+
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact Us</a>
                         </li>
@@ -49,7 +40,8 @@
                     @if(Auth::check())
                         <div class="other-option">
                             <a href="{{route('post.job')}}" class="signin-btn" style="background: deeppink">Post Job</a>
-                            <a href="{{route('joinAsMaster')}}" class="signin-btn" style="background: green">Join Our Team</a>
+                            <a href="{{route('joinAsMaster')}}" class="signin-btn" style="background: green">Join Our
+                                Team</a>
                             <a class="signin-btn">{{ Auth::user()->username }}</a>
                             <a href="{{route('logout')}}" class="signup-btn">LogOut</a>
                         </div>

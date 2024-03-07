@@ -16,17 +16,41 @@ class Category extends Model
 
     public static function allCategories()
     {
-        $categories = DB::table('categories')->select('id', 'name', 'slug','created_at','is_active')->whereNull('deleted_at')->whereNull('is_sub')->get();
+        $categories = DB::table('categories')
+            ->select(
+                'categories.id',
+                'categories.name',
+                'categories.slug',
+                'categories.created_at',
+                'categories.is_active',
+                DB::raw('COUNT(jobs.id) as job_count')
+            )->leftJoin('jobs', 'categories.id', '=', 'category_id')
+            ->whereNull('jobs.deleted_at')->where('jobs.is_active','=',1)
+            ->whereNull('categories.deleted_at')
+            ->whereNull('categories.is_sub')
+            ->groupBy('categories.id')
+            ->get();
         if ($categories->count() == 0) {
             return response()->json(['status' => 'warning', 'message' => 'Categories not found'], 400);
         }
         return response()->json(['status' => 'success', 'message' => 'Categories found', 'data' => $categories], 200);
     }
+
     public static function allSubCategories()
     {
-        $subcategories = DB::table('categories')->select('id', 'name', 'slug','created_at','is_active')->whereNotNull('is_sub')->whereNull('deleted_at')->get();
+        $subcategories = DB::table('categories')
+            ->select(
+                'categories.id',
+                'categories.name',
+                'categories.parent_id',
+                'categories.slug',
+                'categories.created_at',
+                'categories.is_active')
+            ->whereNotNull('is_sub')
+            ->whereNull('deleted_at')
+            ->get();
         if ($subcategories->count() == 0) {
-            return response()->json(['status' => 'warning', 'message' => 'SubCategories not found'], 400);
+            return response()->json(['status' => 'warning', 'message' => 'SubCategories not found', 'data' => []], 400);
         }
         return response()->json(['status' => 'success', 'message' => 'SubCategories found', 'data' => $subcategories], 200);
     }

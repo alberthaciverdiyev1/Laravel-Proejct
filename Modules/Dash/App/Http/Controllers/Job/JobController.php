@@ -26,6 +26,12 @@ class JobController extends Controller
         return view('dash::Job.index');
     }
 
+    public function jobDetails($id)
+    {
+        $details = Job::jobDetails($id)->original['data'];
+        return view('dash::Job.details', compact('details'));
+    }
+
     public function action(Request $request)
     {
         $rules = array(
@@ -64,6 +70,17 @@ class JobController extends Controller
         return view('dash::Job.post', compact('data'));
     }
 
+    public function allJobsIndex(Request $request)
+    {
+//        $filter = ($request->input()->filter === 'jobs') ? 0 : (($request->input()->filter === 'services') ? 1 : 0);
+        $filter = 0;
+        $data['jobs'] = Job::getAllJobs($filter)->original['data'];
+        $data['categories'] = Category::allCategories()->original['data'];
+        $data['subcategories'] = Category::allSubCategories()->original['data'];
+//        return \response()->json($data);
+//        $res = isset($res->original['data']) ? $res->original['data'] : [];
+        return view('dash::Job.all', compact('data'));
+    }
 
     public function postJob(postJobRequest $request)
     {
@@ -74,7 +91,7 @@ class JobController extends Controller
             'town_id' => $request->town_id,
             'description' => $request->description,
             'user_id' => \auth()->user()->id,
-            'is_service' => auth()->user()->hasRole('user') ? 0 :1
+            'is_service' => auth()->user()->hasRole('user') ? 0 : 1
         ];
         $res = Job::postJob($data);
         return \response()->json($res);
