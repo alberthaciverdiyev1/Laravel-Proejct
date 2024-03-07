@@ -24,14 +24,14 @@ Route::domain('{subdomain}.localhost.com')->group(function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('Home');
 Route::get('/about', [AboutController::class, 'index'])->name('About')->middleware('role:super_admin');
-Route::get('/join-as-master', [JobController::class, 'index'])->name('joinAsMaster')->middleware('role::user,developer,admin,manager,master');
-Route::post('/join-as-master', [JobController::class, 'action'])->middleware('role::user,developer,admin,manager,master');
+Route::get('/join-as-master', [JobController::class, 'index'])->name('joinAsMaster')->middleware('role:user,developer,admin,manager,master');
+Route::post('/join-as-master', [JobController::class, 'action'])->middleware('role:user,developer,admin,manager,master');
 //Jobs
-Route::get('/post-job', [JobController::class, 'postJobIndex'])->middleware('role::user,developer,admin,manager,master')->name('post.job');
+Route::get('/post-job', [JobController::class, 'postJobIndex'])->middleware('role:user,developer,admin,manager,master')->name('post.job');
 Route::get('/job-all-ajax', [JobController::class, 'getAllJobs'])->name('job.all');
 Route::get('/job-all/{filter}', [JobController::class, 'allJobsIndex'])->name('page.job.all');
 Route::get('/{id}/job-details', [JobController::class, 'jobDetails'])->name('job.details');
-Route::post('/post-job', [JobController::class, 'postJob'])->middleware('role::user,developer,admin,manager,master');
+Route::post('/post-job', [JobController::class, 'postJob'])->middleware('role:user,developer,admin,manager,master');
 
 Route::group(['prefix' => 'blog'], function () {
     Route::get('/list', [BlogController::class, 'index'])->name('blogIndex');

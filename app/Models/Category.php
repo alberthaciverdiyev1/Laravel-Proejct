@@ -14,9 +14,8 @@ class Category extends Model
 
     protected $fillable = ['name', 'is_active', 'is_sub', 'parent_id', 'updater_id'];
 
-    public static function allCategories($filter)
+    public static function allCategories($filter = 0)
     {
-        $filter = $filter ?: 0;
         $categories = DB::table('categories')
             ->select(
                 'categories.id',

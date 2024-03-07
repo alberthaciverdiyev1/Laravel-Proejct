@@ -1,26 +1,5 @@
 @extends('dash::layouts.layout')
 @section('body')
-    <!-- Page Title Start -->
-    <section class="page-title title-bg6">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <h2>Job Details</h2>
-                <ul>
-                    <li>
-                        <a href="{{route('Home')}}">Home</a>
-                    </li>
-                    <li>Job Details</li>
-                </ul>
-            </div>
-        </div>
-        <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </section>
-    <!-- Page Title End -->
-
     <!-- Job Details Section Start -->
     <section class="job-details ptb-100">
         <div class="container">
@@ -44,19 +23,12 @@
                                                         <i class='bx bx-location-plus'></i>
                                                         {{$details->city_name}} {{$details->town_name}}
                                                     </li>
-                                                    <li>
-                                                        <i class='bx bx-filter-alt' ></i>
-                                                        Accountancy
-                                                    </li>
-                                                    <li>
-                                                        <i class='bx bx-briefcase' ></i>
-                                                        Freelance
-                                                    </li>
+
                                                 </ul>
 
                                                 <span>
                                                         <i class='bx bx-paper-plane' ></i>
-                                                       {{$details->minute_since_update ?? $details->minute_since_creation}}
+                                                       {{$details->minute_since_update ?? $details->minute_since_creation}} time ago
                                                     </span>
                                             </div>
                                         </div>
@@ -68,7 +40,7 @@
                                     {{$details->description}}
                                 </div>
 
-                        
+
                                 <div class="details-text">
                                     <h3>Job Details</h3>
                                     <div class="row">

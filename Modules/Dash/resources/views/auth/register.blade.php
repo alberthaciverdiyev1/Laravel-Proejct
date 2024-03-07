@@ -1,26 +1,5 @@
 @extends('dash::layouts.layout')
 @section('body')
-    <!-- Page Title Start -->
-    <section class="page-title title-bg13">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <h2>Sign Up</h2>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>Sign Up</li>
-                </ul>
-            </div>
-        </div>
-        <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </section>
-    <!-- Page Title End -->
-
     <!-- Sign up Section Start -->
     <div class="signup-section ptb-100">
         <div class="container">

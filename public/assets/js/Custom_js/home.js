@@ -3,12 +3,12 @@ $(function () {
         console.log(filter)
         let html = '';
         data.map(x => {
-            html += `<div class="col-sm-6" id="${x.id}">
+            html += `<div class="col-sm-6" id="${x.id}" >
                 <div style = "${filter === 'jobs' ? '' : 'background-color: darkseagreen'}"  class="job-card">
                         <div class="row align-items-center">
                             <div class="col-lg-3">
                                 <div class="thumb-img">
-                                    <a href="job-details.html">
+                                    <a href="/${x.id}/job-details">
                                         <img src="assets/img/company-logo/1.png" alt="company logo">
                                     </a>
                                 </div>
@@ -17,10 +17,10 @@ $(function () {
                             <div class="col-lg-6">
                                 <div class="job-info">
                                     <h3>
-                                        <a href="job-details.html">${x.subcategory_name}</a>
+                                        <a href="/${x.id}/job-details">${x.subcategory_name}</a>
                                     </h3>
                                     <ul>
-                                        <li>Via <a href="#">${x.user_name} ${x.user_surname}</a></li>
+                                        <li>Via <a href="/${x.id}/job-details">${x.user_name} ${x.user_surname}</a></li>
                                         <li>
                                             <i class='bx bx-location-plus'></i>
                                             ${x.city_name},  ${x.town_name}
@@ -31,7 +31,7 @@ $(function () {
                                         </li>
                                         <li>
                                             <i class='bx bx-briefcase'></i>
-                                            ${x.description ?? ""}
+                                            ${x.description.slice(0,35) ?? ""}
                                         </li>
                                     </ul>
                                 </div>
