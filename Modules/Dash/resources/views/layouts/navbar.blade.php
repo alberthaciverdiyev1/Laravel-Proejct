@@ -43,8 +43,7 @@
                     @if(Auth::check())
                         <div class="other-option">
                             <a href="{{route('post.job')}}" class="signin-btn" style="background: deeppink">Post Job</a>
-                            <a href="{{route('joinAsMaster')}}" class="signin-btn" style="background: green">Join Our
-                                Team</a>
+                            <a href="{{route('joinAsMaster')}}" class="signin-btn" style="background: green">Join Our Team</a>
                             <a class="signin-btn">{{ Auth::user()->username }}</a>
                             <a href="{{route('logout')}}" class="signup-btn">LogOut</a>
                         </div>

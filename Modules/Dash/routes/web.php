@@ -24,8 +24,8 @@ Route::domain('{subdomain}.localhost.com')->group(function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('Home');
 Route::get('/about', [AboutController::class, 'index'])->name('About')->middleware('role:super_admin');
-Route::get('/join-as-master', [JobController::class, 'index'])->name('joinAsMaster')->middleware('role:user,developer,admin,manager,master');
-Route::post('/join-as-master', [JobController::class, 'action'])->middleware('role:user,developer,admin,manager,master');
+Route::get('/join-as-master', [JobController::class, 'index'])->name('joinAsMaster');
+Route::post('/join-as-master', [JobController::class, 'action'])->middleware('role:user,developer,admin,manager,master') ;
 //Jobs
 Route::get('/post-job', [JobController::class, 'postJobIndex'])->middleware('role:user,developer,admin,manager,master')->name('post.job');
 Route::get('/job-all-ajax', [JobController::class, 'getAllJobs'])->name('job.all');
